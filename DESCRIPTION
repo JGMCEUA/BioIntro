@@ -1,14 +1,24 @@
 Package: BioIntro
-Title: Paquete diseñado para agrupar los ejemplos vistos en la clase propedeutico de Introducción a la programación
+Title: Compilación de funciones utilizadas de ejemploen las clases propedeuticas de introducción a la programación.
 Version: 0.1.0
+Date: 2024-09-15
 Authors@R: 
-    person("José Gustavo", "Marín Contreras", , "jose.marin@cinvestav.mx", role = c("aut", "cre"),
+    person("Jose Gustavo", "Marin Contreras", , "jose.marin@cinvestav.mx", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0006-6375-3220"))
-Description: Compilación de los ejemplos vistos en los propedeuticos de introducción a la informática en el CINVESTAV (2024)
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Este paquete alberga los programas de ejeplos dados en la clase propedeutica de intruducción a la programación 2024, con la intención de probar a realizar un paquete para Bioconductor.
+License: MIT + file LICENSE
+URL: https://github.com/JGMCEUA/BioIntro
+BugReports: https://support.bioconductor.org/tag/BioIntro
+biocViews: Software
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.0.0
-URL: https://github.com/JGMCEUA/BioIntro
-BugReports: https://github.com/JGMCEUA/BioIntro/issues
+RoxygenNote: 7.3.2
+Suggests: 
+    BiocStyle,
+    knitr,
+    RefManageR,
+    rmarkdown,
+    sessioninfo,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
